@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body{
+  background-color: #19151C;
+}
+
 
 /*--------------------------------------------------------------
 # Header
@@ -56,7 +60,7 @@
 }
 
 /*--------------------------------------------------------------
-Menu de navegação
+Menu de navegação - HEADER
 --------------------------------------------------------------*/
 .main-nav,
 .main-nav * {
@@ -149,3 +153,185 @@ Menu de navegação
 }
 
 
+/*--------------------------------------------------------------
+ INTRODUÇAO - PARTE 01
+--------------------------------------------------------------*/
+
+#intro {
+  margin-top: 54px;
+  background-color: #19151C;
+}
+
+.shadow img{
+  position: absolute;
+  top: 0;
+}
+.intro-text{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+.intro-img img{
+  width: 100%;
+}
+
+.main-text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.main-text h1 {
+  text-align: center;
+  color: #F1FAEE;
+  font-size: 28px;
+  font-family: poppins;
+
+}
+
+.roller {
+  height: 2.15rem;
+  line-height: 3.5rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--colormain--);
+}
+
+.roller #rolltext {
+  margin-top: 8px;
+  position: absolute;
+  top: 0;
+  animation: slide 7s infinite;
+  color: #833ba5;
+  font-family: poppins;
+  font-size: 28px;
+  text-align: center;
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+
+  25% {
+    top: -4rem;
+  }
+
+  50% {
+    top: -8rem;
+  }
+
+  80.5% {
+    top: -18.25rem;
+  }
+}
+
+.intro-paragrafo p{
+  font-family: poppins;
+  color: #ffff;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* BTNS*/
+.intro_btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #894B94;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-family: poppins;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--fontcolor--);
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #894B94;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
+
+.services-btn {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 10px 8px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #ffffff;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #725AC1;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #725AC1;
+  width: 120px;
+  font-family: poppins;
+}
+
+.services-btn:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+
+.services-btn:active {
+  transform: scale(0.9);
+}
