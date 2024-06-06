@@ -161,6 +161,7 @@ Menu de navegação - HEADER
 #intro {
   margin-top: 54px;
   background-color: #19151C;
+  
 }
 
 .shadow img{
@@ -388,6 +389,7 @@ Menu de navegação - HEADER
 .about_card a{
   text-decoration: underline;
   color: #dc7fec;
+  z-index: 80;
 }
 
 
@@ -625,6 +627,7 @@ footer{
   color: #ffffff;
   cursor: pointer;
   margin-top: 8px;
+  z-index: 85;
 }
 .links_list span{
   text-decoration: underline;
@@ -641,6 +644,7 @@ footer{
 }
 
 .copy{
+  padding: 12px;
   margin-top: 16px;
   display: flex;
   flex-direction: column;
@@ -656,4 +660,135 @@ footer{
   text-align: center;
   font-family: poppins;
   font-size: 14px;
+}
+
+
+/* RESPONSIVIDADE */
+
+
+
+@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+  /* Desktop */
+  .header{
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .main-nav a {
+    font-size: 12;
+    font-family: poppins;
+  }
+ 
+
+  .intro-img img{
+    width: 600px;
+  
+  }
+
+  .intro-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro-paragrafo p {
+   text-align: center;
+  }
+
+  .cta{
+    margin: 1rem;
+  }
+
+  .intro_btns{
+    z-index: 85;
+  }
+
+  .shadow img{
+    right: 0;
+    z-index: 1;
+  }
+
+  .main-text h1{
+    font-size: 36px;
+  }
+
+  .intro-paragrafo{
+    width: 360px;
+    text-align: centers;
+  }
+
+
+  /* about */
+
+  .about-text h2{
+    font-size: 32px;
+  }
+
+  .about-text p{
+    font-size: 16px;
+  }
+
+  #about-cards_content{
+
+    display: flex;
+    gap: 1rem;
+  }
+
+  .about_card{
+    height: 320px;
+  }
+  
+  .about_card a {
+    z-index: 82;
+    cursor: pointer;
+  }
+
+  /* clientes */
+  .clientes_header h3{
+    font-size: 28px;
+    text-align: center;
+  }
+  .clientes_header p{
+    font-size: 18px;
+  }
+  .clients-wrap{
+ 
+    display: flex;
+    gap: 2px;
+  }
+
+  .card_medvitals img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* projetos */
+
+
+  .projetos_card_list {
+    display: flex;
+    gap: 0;
+  }
+
+  .projeto_desc_text{
+    max-width: 80%;
+  }
+
+  /* footer */
+
+  .links_rapidos{
+    display: none;
+  }
+ 
 }
