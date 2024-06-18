@@ -400,9 +400,11 @@ Menu de navegação - HEADER
   z-index: 99;
 }
 
-#clientes {
+#clients {
+  padding: 2rem;
   z-index: 99;
 }
+
 .clientes_header{
   margin-top: 2rem;
   color: #ffffff;
@@ -457,7 +459,9 @@ Menu de navegação - HEADER
  PROJETOS - SEÇÃO DOS PROJETOS
 ----------------------------------------------------------------*/
 
-
+#projetos{
+  padding: 2rem;
+}
 .projetos_header{
   text-align: center;
   color: #ffffff;
@@ -527,6 +531,7 @@ Menu de navegação - HEADER
 ----------------------------------------------------------------*/
 
 footer{
+  padding: 2rem;
   margin-top: 2rem;
 }
 
@@ -665,8 +670,6 @@ footer{
 
 /* RESPONSIVIDADE */
 
-
-
 @media only screen and (min-width: 1280px) and (max-width: 1440px) {
   /* Desktop */
   .header{
@@ -791,4 +794,76 @@ footer{
     display: none;
   }
  
+}
+
+
+@media only screen and (min-width: 1445px) and (max-width: 1920px) {
+/* monitores grandes */
+  .intro-content{
+    display: flex;
+    align-items: center;
+  }
+  .main-text h1{
+    font-size: 46px;
+  }
+  
+  .intro-paragrafo p{
+    font-size: 18px;
+  }
+  .intro_btns{
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+
+  .shadow img{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }  
+
+  #about{
+    padding: 1.8rem;
+  }
+
+  .about_cards_section h2{
+    font-size: 32px;
+    
+  }
+
+ .about-text p{
+  font-size: 16px;
+  font-weight: 300;
+ }
+  #about-cards_content{
+    display: flex; 
+    gap: 1rem;
+  }
+
+  .clientes_header h3{
+    font-size: 32px; 
+  }
+
+  .clientes_header p{
+    font-size: 16px; 
+  }
+
+  #projetos{
+    margin-top: 2rem;
+  }
+
+  .projetos_card_list{
+    display: flex;
+    gap: 0px;
+  }
+  .projeto_desc_text{
+    max-width: 80%;
+  }
+  
+  .links_rapidos{
+    display: none;
+  }
+
+
 }
