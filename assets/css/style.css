@@ -1,0 +1,325 @@
+
+.main-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  
+  .main-text h1 {
+    text-align: center;
+    color: #F1FAEE;
+    font-size: 28px;
+    font-family: poppins;
+  
+  }
+  
+  .roller {
+    height: 2.15rem;
+    line-height: 3.5rem;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .roller #rolltext {
+    margin-top: 8px;
+    position: absolute;
+    top: 0;
+    animation: slide 7s infinite;
+    color: #833ba5;
+    font-family: poppins;
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  @keyframes slide {
+    0% {
+      top: 0;
+    }
+  
+    25% {
+      top: -4rem;
+    }
+  
+    50% {
+      top: -8rem;
+    }
+  
+    80.5% {
+      top: -18.25rem;
+    }
+}
+
+
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #683970;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+  }
+  
+  .cta span {
+    position: relative;
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+  }
+  
+  
+  
+  
+  .cta:hover:before {
+    width: 100%;
+    background: #894B94;
+  }
+  
+  
+  
+  .cta:active {
+    transform: scale(0.95);
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+    .text-center{
+        width: 100%;
+        background-color: red;
+    }
+
+    .main-banner{
+        margin: 0;
+        padding: 9.375rem 0rem 1.875rem 0rem;
+    }
+
+    .menu-trigger span{
+        color: #d31c1c;
+    }
+
+    .desc-intro{
+        text-align: center;
+    }
+
+    .desc-intro p{
+        width: 100%;
+    }
+    
+   .btn-intro{
+     display: flex;
+     justify-content: center;
+    }
+
+    #about {
+        padding-top: 10px;
+    }
+
+    .section-heading h6, span{
+        color: #833ba5ed;
+        
+    }
+    
+    .section-heading h4{
+        color: #ffffff;
+    }
+
+    .about-right-content a{
+        color: #a557b3;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .header-area .main-nav .logo h4 {
+      font-size: 24px;
+    }
+    .header-area .main-nav .logo h4 img {
+      max-width: 25px;
+      margin-left: 0px;
+    }
+    .header-area .main-nav .nav li:last-child {
+      padding-left: 20px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .intro-banner:before {
+      display: none;
+    } 
+    form#contact {
+      overflow: hidden;
+    }
+    .header-area .main-nav .logo h4 {
+      font-size: 20px;
+    }
+    .main-banner .left-content {
+      margin-right: 0px;
+    }
+    
+    .main-banner:before {
+      display: none;
+    }
+    .main-banner .right-image {
+      margin: 30px auto 0px auto;
+      text-align: s;
+    }
+    .features-item {
+      margin-bottom: 45px;
+    }
+    .last-features-item,
+    .last-skill-item {
+      margin-bottom: 0px !important;
+    }
+    .skill-item {
+      margin-bottom: 30px;
+    }
+    .about-left-image img {
+      margin-right: 0px;
+      margin-bottom: 45px;;
+    }
+    .services .naccs .menu div {
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .service-item {
+      text-align: center;
+    }
+    .service-item .icon {
+      margin-top: 0px;
+      margin-bottom: 30px;
+    }
+    .about-us .left-image {
+      margin-right: 30px;
+      margin-left: 30px;
+      margin-bottom: 45px;
+    }
+    .blog-posts {
+      margin-left: 0px;
+      margin-top: 30px;
+    }
+    .post-item {
+      margin-bottom: 70px;
+    }
+    .our-portfolio .owl-nav {
+      display: none !important;
+    }
+    .contact-info {
+      margin-top: 60px;
+    }
+    form#contact {
+      padding: 45px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .header-area .main-nav .logo h4 {
+      font-size: 30px;
+    }
+    .header-area .main-nav .logo h4 img {
+      max-width: 30px;
+      margin-left: 5px;
+    }
+    .main-banner .info-stat {
+      margin-bottom: 15px;
+    }
+    .service-item {
+      text-align: center;
+      padding: 30px;
+    }
+    .service-item .icon {
+      float: none;
+      margin-right: 0px;
+      margin-bottom: 15px;
+    }
+    .service-item .right-content {
+      display: inline-block;
+    }
+    .services .naccs .menu div .thumb {
+      padding: 5px;
+    }
+    .services .icon img {
+      margin: 0px;
+    }
+    .services ul.nacc li.active {
+      padding: 45px;
+    }
+    .services .naccs .menu div  {
+      font-size: 0px;
+    }
+    .services ul.nacc li .right-image img {
+      float: none;
+    }
+    .our-portfolio .section-heading,
+    .about-us .section-heading,
+    .about-us .about-item,
+    .about-us p,
+    .about-us .main-green-button {
+      text-align: center;
+    }
+    .our-portfolio .section-heading .line-dec {
+      margin: 0 auto;
+    }
+    .our-services .section-heading {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    .free-quote form input {
+      margin-left: 0px;
+      padding: 0px 30px;
+    }
+    .free-quote form button {
+      margin-left: 0px;
+      border-bottom-left-radius: 40px;
+      border-top-right-radius: 0px;
+    }
+    .blog-posts {
+      margin-left: 0px;
+      margin-top: 30px;
+    }
+    .post-item {
+      margin-bottom: 30px;
+    }
+    .post-item .thumb img {
+      max-width: 140px;
+    }
+    .post-item .right-content p {
+      display: none;
+    }
+    .about-us .about-item {
+      margin-top: 15px;
+    }
+    form#contact {
+      padding: 30px;
+    }
+  }
