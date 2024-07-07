@@ -157,6 +157,20 @@
     .about-right-content a{
         color: #a557b3;
     }
+
+    .services{
+      padding-top: 1rem;
+    }
+
+    .menu{
+      display: flex;
+      gap: 1.2rem;
+      justify-content: center;
+    }
+
+    .contact-us{
+      padding: 0px;
+    }
 }
 
 
