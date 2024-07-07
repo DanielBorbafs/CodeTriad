@@ -147,12 +147,12 @@ body {
 }
 
 ::selection {
-  background: #fa65b1;
+  background: #833ba5;
   color: #fff !important;
 }
 
 ::-moz-selection {
-  background: #fa65b1;
+  background: #833ba5;
   color: #fff !important;
 }
 
@@ -220,7 +220,7 @@ body {
 }
 
 .border-first-button a:hover {
-  background-color: #fa65b1;
+  background-color: #833ba5;
   color: #fff !important;
 }
 
@@ -288,8 +288,8 @@ intro
 .intro-banner a {
   display: inline-block !important;
   padding: 10px 20px !important;
-  color: #fa65b1 !important;
-  border: 1px solid #fa65b1 !important;
+  color: #833ba5 !important;
+  border: 1px solid #833ba5 !important;
   border-radius: 23px;
   font-weight: 500 !important;
   letter-spacing: 0.3px !important;
@@ -299,7 +299,7 @@ intro
 }
 
 .intro-banner a:hover {
-  background-color: #fa65b1;
+  background-color: #833ba5;
   color: #fff !important;
 }
 
@@ -358,7 +358,7 @@ header
 }
 
 .pre-header ul.info li a:hover {
-  color: #fa65b1;
+  color: #833ba5;
 }
 
 .pre-header ul.info li a i {
@@ -388,7 +388,7 @@ header
 }
 
 .pre-header ul.social-media li a:hover {
-  background-color: #fa65b1;
+  background-color: #833ba5;
 }
 
 .background-header {
@@ -407,7 +407,7 @@ header
 }
 
 .background-header .main-nav .nav li:hover a {
-  color: #fa65b1;
+  color: #833ba5;
 }
 
 .background-header .nav li a.active {
@@ -419,7 +419,7 @@ header
   position: absolute;
   width: 100%;
   height: 1px;
-  background-color: #fa65b1;
+  background-color: #833ba5;
   content: '';
   left: 50%;
   bottom: -20px;
@@ -448,6 +448,9 @@ header
   min-height: 80px;
   background: transparent;
 }
+
+
+
 
 .header-area .main-nav .logo {
   float: left;
@@ -526,12 +529,12 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #fa65b1!important;
+  color: #833ba5 !important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #fa65b1!important;
+  color: #833ba5 !important;
   opacity: 1;
 }
 
@@ -593,7 +596,7 @@ header
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
   background: #fff;
-  color: #fa65b1!important;
+  color: #833ba5!important;
   padding-left: 25px;
 }
 
@@ -733,7 +736,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #fa65b1;
+  color: #833ba5;
 }
 
 @media (max-width: 1200px) {
@@ -772,7 +775,7 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #fa65b1!important;
+    color: #833ba5 !important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -834,7 +837,7 @@ header
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #fa65b1!important;
+    color: #833ba5 !important;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
@@ -949,7 +952,7 @@ preloader
     height: 16px;
     top: 12px;
     left: 15px;
-    background: #fa65b1;
+    background: #833ba5;
     border-radius: 50%;
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -972,7 +975,7 @@ preloader
     width: 16px;
     height: 16px;
     margin-left: 16px;
-    background: #fa65b1;
+    background: #833ba5;
     border-radius: 50%;
 }
 
@@ -1129,7 +1132,7 @@ About Style
 }
 
 .first-skill-item .progress .progress-bar {
-  border-color: #fa65b1;
+  border-color: #833ba5;
 }
 
 .second-skill-item .progress .progress-bar {
@@ -1628,7 +1631,7 @@ Portfolio
 
 .portfolio-item:hover .down-content h4,
 .portfolio-item:hover .down-content span {
-  color: #fa65b1;
+  color: #833ba5;
 }
 
 .portfolio-item .thumb img {
@@ -1686,7 +1689,7 @@ Portfolio
 
 .our-portfolio .owl-nav span:hover {
   color: #fff;
-  background-color: #fa65b1;
+  background-color: #833ba5;
 }
 
 
@@ -1942,7 +1945,7 @@ form#contact #map iframe {
 }
 
 .fill-form .icon:hover a {
-  color: #fa65b1;
+  color: #833ba5;
 }
 
 form#contact input {
@@ -1990,20 +1993,20 @@ form#contact button {
   background-color: #fff;
   font-size: 15px;
   font-weight: 400;
-  color: #fa65b1;
+  color: #833ba5;
   margin-top: 30px;
   width: 100%;
   text-transform: capitalize;
   padding: 12px 25px;
   border-radius: 23px;
   letter-spacing: 0.25px;
-  border: 1px solid #fa65b1;
+  border: 1px solid #833ba5;
   transition: all .3s;
   outline: none;
 }
 
 form#contact button:hover {
-  background-color: #fa65b1!important;
+  background-color: #833ba5 !important;
   color: #fff!important;
 }
 
