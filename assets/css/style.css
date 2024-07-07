@@ -171,6 +171,14 @@
     .contact-us{
       padding: 0px;
     }
+
+    .thumb > .icon{
+      background-color: transparent;
+    }
+
+    .services .section-heading{
+      margin-bottom: 2rem;
+    }
 }
 
 

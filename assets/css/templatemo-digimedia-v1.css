@@ -1399,7 +1399,7 @@ Services Style
   display: inline-block;
   width: 100%;
   padding: 30px 0px;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 .services .naccs .menu div.active {
