@@ -40,6 +40,7 @@ Services Style
     margin: 0 auto;
   }
   
+
   .services .naccs {
     position: relative;
     z-index: 1;
@@ -90,10 +91,14 @@ Services Style
     background-color: transparent;
   }
   
-  .services .naccs .menu div.active {
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-  }
+
+ .border-color{
+  border: 1px solid #d57bff;
+  border-radius: 100%;
+  transition: 1000ms;
   
+ }
+
   .services ul.nacc {
     height: 100% !important;
     position: relative;

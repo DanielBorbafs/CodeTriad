@@ -69,8 +69,8 @@ img {
 }
 
 .contact-social ul li a:hover {
-    border: 1px solid #FAB702;
-    color: #FAB702;
+    border: 1px solid #833ba5;
+    color: #833ba5;
 }
 
 .contact-content img {
@@ -89,4 +89,8 @@ footer p {
 
 footer img {
     width: 44px;
+}
+
+footer a{
+    color: #833ba5;
 }
