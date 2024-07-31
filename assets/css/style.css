@@ -1,3 +1,9 @@
+section{
+  background-color: #000000;
+}
+
+
+
 
 .main-text {
   width: 100%;
@@ -7,7 +13,6 @@
   text-align: center;
 }
 
-
 .main-text h1 {
   text-align: center;
   color: #F1FAEE;
@@ -15,7 +20,6 @@
   font-family: poppins;
 
 }
-
 .roller {
   height: 2.15rem;
   line-height: 3.5rem;
@@ -27,7 +31,6 @@
   align-items: center;
   
 }
-
 .roller #rolltext {
   margin-top: 8px;
   position: absolute;
@@ -38,7 +41,6 @@
   font-size: 28px;
   text-align: center;
 }
-
 @keyframes slide {
   0% {
     top: 0;

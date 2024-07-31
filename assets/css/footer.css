@@ -77,7 +77,7 @@ img {
     max-width: 210px;
 }
 
-section, footer {
+#contact, footer {
     background: #1A1E25;
     color: #868c96;
 }
