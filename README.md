@@ -1,7 +1,6 @@
 <h1 align="center">Oi 👋, Esse é um projeto de um website da Codetriad</h1>
 <h3 align="center">Uma empresa de desenvolvimento de tecnologia</h3>
 
-- 🔭 Eu desenvolvi o projeto da [Codetriad](codetriad.net)
 
 <h3 align="left">Tecnologias utilizdas</h3>
 
