@@ -2,10 +2,7 @@
 <h3 align="center">Uma empresa de desenvolvimento de tecnologia</h3>
 
 
-<h3 align="left">Tecnologias utilizdas</h3>
 
-<img src="https://github.com/DanielBorbafs/repositorio-icons/blob/main/frontend/js-icon.png" alt="javascript" width="40" height="40"/> <img src="https://github.com/DanielBorbafs/repositorio-icons/blob/main/frontend/css-icon.png" alt="CSS" width="40" height="40"/> <img src="https://github.com/DanielBorbafs/repositorio-icons/blob/main/frontend/bootstrap-icon.png" alt="Bootstrap" width="40" height="40"/> 
- 
 
 
 
