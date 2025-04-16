@@ -1,17 +1,14 @@
-const sql = require('mssql');
-
-const config = {
-  user: 'sa',
-  password: '@Senha123!',
-  server: 'localhost',
-  database: 'EMPLOYEES',
-  options: {
-    encrypt: false,
-    trustServerCertificate: true,
-  },
-};
-
 module.exports = {
-  sql,
-  config,
+  database: 'EMPLOYEES',
+  username: 'sa',
+  password: '@Senha123!',
+  host: 'localhost',
+  dialect: 'mssql',
+  dialectOptions: {
+    options: {
+      encrypt: false,
+      trustServerCertificate: true,
+    },
+  },
+  logging: false,
 };
