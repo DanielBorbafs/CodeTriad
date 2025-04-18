@@ -4,6 +4,7 @@ const {
   getEmployees,
   addEmployee,
   searchEmployee,
+  updateEmployee,
 } = require('../controllers/employeeController');
 
 // Rota para listar todos os funcionários
@@ -14,5 +15,7 @@ router.post('/', addEmployee);
 
 // Rota para buscar um funcionário por ID
 router.get('/:id', searchEmployee);
+
+router.put('/:id', updateEmployee);
 
 module.exports = router;
