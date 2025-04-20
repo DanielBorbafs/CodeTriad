@@ -1,14 +1,5 @@
 const Employee = require('../models/employee');
-
-async function getEmployees(req, res) {
-  try {
-    const employees = await Employee.findAll();
-    res.json(employees);
-  } catch (err) {
-    console.error(err);
-    res.status(500).send('Erro ao buscar funcionários');
-  }
-}
+const { Op } = require('sequelize');
 
 async function addEmployee(req, res) {
   try {
@@ -63,6 +54,36 @@ async function updateEmployee(req, res) {
     res.json(employee);
   } catch (error) {
     res.status(500).json({ error: 'Erro ao atualizar funcionário' });
+  }
+}
+
+async function getEmployees(req, res) {
+  try {
+    const { gender, job, first_name, last_name, email, minSalary, maxSalary } =
+      req.query;
+    const where = {};
+
+    if (gender) where.gender = gender;
+    if (first_name) where.first_name = { [Op.like]: `%${first_name}%` };
+    if (last_name) where.last_name = { [Op.like]: `%${last_name}%` };
+    if (email) where.email = { [Op.like]: `%${email}%` };
+    if (job) where.job = { [Op.like]: `%${job}%` };
+    if (minSalary) where.salary = { [Op.gte]: parseFloat(minSalary) };
+    if (maxSalary) {
+      where.salary = {
+        ...where.salary,
+        [Op.lte]: parseFloat(maxSalary),
+      };
+    }
+
+    const employees = await Employee.findAll({ where });
+
+    res.json(employees);
+  } catch (error) {
+    console.error(error);
+    res
+      .status(500)
+      .json({ message: 'Erro ao buscar funcionários com filtros', error });
   }
 }
 

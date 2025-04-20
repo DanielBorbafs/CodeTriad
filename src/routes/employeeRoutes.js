@@ -5,6 +5,7 @@ const {
   addEmployee,
   searchEmployee,
   updateEmployee,
+  getFilteredEmployees,
 } = require('../controllers/employeeController');
 const { employeeSchema } = require('../validators/employeeValidator');
 const validateBody = require('../middlewares/validadeBody');
