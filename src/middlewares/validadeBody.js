@@ -1,7 +1,5 @@
 const { employeeSchema } = require('../validators/employeeValidator');
 
-const schema = employeeSchema;
-
 function validateBody(schema) {
   return (req, res, next) => {
     const { error } = schema.validate(req.body, { abortEarly: false });

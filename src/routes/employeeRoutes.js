@@ -13,7 +13,7 @@ const validateBody = require('../middlewares/validadeBody');
 router.get('/', getEmployees);
 
 // Rota para adicionar um novo funcionário
-router.post('/', addEmployee);
+router.post('/', validateBody(employeeSchema), addEmployee);
 
 // Rota para buscar um funcionário por ID
 router.get('/:id', searchEmployee);
