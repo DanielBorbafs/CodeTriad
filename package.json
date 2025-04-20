@@ -10,11 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "csv-parser": "^3.2.0",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "fs": "^0.0.1-security",
     "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
     "mssql": "^11.0.1",
     "nodemon": "^3.1.9",
     "sequelize": "^6.37.7"
