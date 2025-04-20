@@ -3,7 +3,7 @@ CREATE DATABASE EMPLOYEES_new;
 GO
 
 -- Troca para o banco EMPLOYEES
-USE EMPLOYEES;
+USE EMPLOYEES_;
 GO
 
 -- Criação da tabela

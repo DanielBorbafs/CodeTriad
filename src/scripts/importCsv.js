@@ -3,7 +3,7 @@ const csv = require('csv-parser');
 const sql = require('mssql');
 const path = require('path');
 
-const csvPath = path.join(__dirname, 'data', 'users_clean.csv');
+const csvPath = path.join(__dirname, 'data', 'dados_limpos.csv');
 // Configurações da conexão (ajuste de acordo com seu container)
 const config = {
   user: 'sa',
@@ -35,13 +35,12 @@ async function insertData() {
 
         for (let row of results) {
           const query = `
-            INSERT INTO Employees (ID, FIRST_NAME, LAST_NAME, EMAIL, GENDER, JOB, SALARY)
-            VALUES (@id, @first_name, @last_name, @email, @gender, @job, @salary)
+            INSERT INTO Employees_new (FIRST_NAME, LAST_NAME, EMAIL, GENDER, JOB, SALARY)
+            VALUES ( @first_name, @last_name, @email, @gender, @job, @salary)
           `;
 
           await pool
             .request()
-            .input('id', sql.Int, row.id)
             .input('first_name', sql.VarChar, row.first_name)
             .input('last_name', sql.VarChar, row.last_name)
             .input('email', sql.VarChar, row.email)

@@ -6,6 +6,8 @@ const {
   searchEmployee,
   updateEmployee,
 } = require('../controllers/employeeController');
+const { employeeSchema } = require('../validators/employeeValidator');
+const validateBody = require('../middlewares/validadeBody');
 
 // Rota para listar todos os funcionários
 router.get('/', getEmployees);

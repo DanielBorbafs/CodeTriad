@@ -12,10 +12,15 @@ async function getEmployees(req, res) {
 
 async function addEmployee(req, res) {
   try {
-    await Employee.create(req.body);
-    res.status(201).send('Funcionário criado com sucesso!');
+    console.log('📥 Corpo recebido:', req.body);
+
+    const newEmployee = await Employee.create(req.body); // Pega o resultado da criação
+
+    console.log('✅ Funcionário criado:', newEmployee.toJSON()); // Mostra no console o que foi salvo
+
+    res.status(201).json(newEmployee); // Retorna os dados do novo funcionário
   } catch (err) {
-    console.error(err);
+    console.error('❌ Erro ao criar funcionário:', err);
     res.status(500).send('Erro ao criar funcionário');
   }
 }
