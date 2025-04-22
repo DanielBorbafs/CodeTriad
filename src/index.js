@@ -3,9 +3,10 @@ const app = express();
 const employeeRoutes = require('./routes/employeeRoutes');
 require('./models/employee');
 const authRoutes = require('./routes/authRoutes');
-const logger = require('./utils/logger');
+const cors = require('cors');
 
 app.use(express.json());
+app.use(cors());
 app.use('/employee', employeeRoutes);
 app.use('/auth', authRoutes);
 
