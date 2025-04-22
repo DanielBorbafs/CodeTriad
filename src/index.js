@@ -3,6 +3,7 @@ const app = express();
 const employeeRoutes = require('./routes/employeeRoutes');
 require('./models/employee');
 const authRoutes = require('./routes/authRoutes');
+const logger = require('./utils/logger');
 
 app.use(express.json());
 app.use('/employee', employeeRoutes);
