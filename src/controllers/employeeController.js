@@ -77,8 +77,18 @@ async function updateEmployee(req, res) {
 
 async function getEmployees(req, res) {
   try {
-    const { gender, job, first_name, last_name, email, minSalary, maxSalary } =
-      req.query;
+    const {
+      gender,
+      job,
+      first_name,
+      last_name,
+      email,
+      minSalary,
+      maxSalary,
+      orderBy,
+      order,
+    } = req.query;
+
     const where = {};
 
     if (gender) where.gender = gender;
@@ -94,7 +104,16 @@ async function getEmployees(req, res) {
       };
     }
 
-    const employees = await Employee.findAll({ where });
+    const orderClause = [];
+    if (orderBy) {
+      const direction = order?.toUpperCase() === 'DESC' ? 'DESC' : 'ASC';
+      orderClause.push([orderBy, direction]);
+    }
+
+    const employees = await Employee.findAll({
+      where,
+      order: orderClause,
+    });
 
     res.json(employees);
   } catch (error) {

@@ -21,7 +21,7 @@ async function login(req, res) {
       { id: user.id, username: user.username },
       SECRET_KEY,
       {
-        expiresIn: '1h', // tempo de vida do crachá
+        expiresIn: '1h',
       }
     );
 

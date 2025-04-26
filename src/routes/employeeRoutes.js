@@ -1,11 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const {
-  getEmployees,
   addEmployee,
   searchEmployee,
   updateEmployee,
-  getFilteredEmployees,
+  getEmployees,
 } = require('../controllers/employeeController');
 const { employeeSchema } = require('../validators/employeeValidator');
 const validateBody = require('../middlewares/validadeBody');
