@@ -1,10 +1,10 @@
 const jwt = require('jsonwebtoken');
 
-const SECRET_KEY = 'segredin123'; // Usa a mesma do login
+const SECRET_KEY = 'segredin123';
 
 function authenticateToken(req, res, next) {
-  const authHeader = req.headers['authorization']; // Ex: Bearer token
-  const token = authHeader && authHeader.split(' ')[1]; // Pega só o token
+  const authHeader = req.headers['authorization'];
+  const token = authHeader && authHeader.split(' ')[1];
 
   if (!token) {
     return res
@@ -17,8 +17,8 @@ function authenticateToken(req, res, next) {
       return res.status(403).json({ message: 'Token inválido ou expirado.' });
     }
 
-    req.user = user; // Adiciona os dados do usuário no req
-    next(); // Deixa continuar
+    req.user = user;
+    next();
   });
 }
 
